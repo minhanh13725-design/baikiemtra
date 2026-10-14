@@ -1,13 +1,21 @@
-* {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: Arial, sans-serif;
     }
 
+    /* Đặt màu nền tổng thể trang web là màu xám nhạt để tạo khoảng viền trắng */
     body {
-        background-color: #fff;
+        background-color: #f0f2f5;
         color: #333;
+    }
+
+    /* Khung bao toàn bộ website giới hạn chiều rộng để tạo viền trắng hai bên (nếu muốn) hoặc để các khối tách rời */
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #fff;
     }
 
     /* HEADER */
@@ -17,6 +25,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px 30px;
+        margin-bottom: 20px; /* Tạo khe hở viền trắng mỏng nếu cần */
     }
 
     .logo-container img {
@@ -53,7 +62,8 @@
     .banner {
         background-color: #0042ad;
         text-align: center;
-        padding: 20px 0;
+        padding: 10px 0;
+        margin-bottom: 20px; /* Tạo khe hở viền trắng giữa banner và menu */
     }
 
     .banner img {
@@ -66,6 +76,7 @@
     /* MAIN MENU */
     nav {
         background-color: #ff6600;
+        margin-bottom: 20px; /* Tạo khoảng trắng lớn ngăn cách menu với phần nội dung bên dưới */
     }
 
     nav ul {
@@ -91,7 +102,7 @@
     /* CONTENT SECTION */
     .container {
         max-width: 1200px;
-        margin: 20px auto;
+        margin: 0 auto 30px auto;
         padding: 0 15px;
     }
 
@@ -181,6 +192,5 @@
         padding: 15px 0;
         font-weight: bold;
         font-size: 16px;
-        margin-top: 40px;
         text-transform: uppercase;
     }
