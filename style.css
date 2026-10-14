@@ -1,0 +1,186 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #fff;
+        color: #333;
+    }
+
+    /* HEADER */
+    header {
+        background-color: #0042ad;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+    }
+
+    .logo-container img {
+        height: 45px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-container input {
+        padding: 8px 12px;
+        width: 250px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .search-container button {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .search-container button:hover {
+        background-color: #e55c00;
+    }
+
+    /* BANNER */
+    .banner {
+        background-color: #0042ad;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .banner img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* MAIN MENU */
+    nav {
+        background-color: #ff6600;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 12px 25px;
+        font-weight: bold;
+        font-size: 15px;
+        transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #e55c00;
+    }
+
+    /* CONTENT SECTION */
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    h2.section-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .news-grid {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .news-column {
+        flex: 1;
+        border: 1px solid #ddd;
+        padding: 15px;
+        background: #fff;
+    }
+
+    /* HIỆU ỨNG ĐỔ BÓNG MÀU GREEN KHI HOVER ẢNH */
+    .news-column img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .news-column img:hover {
+        box-shadow: 0 10px 20px rgba(0, 128, 0, 0.6);
+        transform: translateY(-2px);
+    }
+
+    .main-news-img {
+        margin-bottom: 15px;
+    }
+
+    .news-title-large {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .news-title-large a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .news-title-large a:hover {
+        color: #ff6600;
+        text-decoration: underline;
+    }
+
+    .sub-news-item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    .sub-news-item img {
+        width: 120px;
+        height: auto;
+    }
+
+    .sub-news-title a {
+        color: #000;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .sub-news-title a:hover {
+        color: #ff6600;
+        text-decoration: underline;
+    }
+
+    /* FOOTER / HỌ TÊN SINH VIÊN */
+    footer {
+        background-color: #0042ad;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 40px;
+        text-transform: uppercase;
+    }
